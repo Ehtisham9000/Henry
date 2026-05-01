@@ -1,0 +1,67 @@
+{
+  "center_name": "Excellence Coaching Center",
+  "phone_number": "923001234567",
+  "whatsapp_number": "923001234567",
+  "google_script_url": "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec",
+  "subjects": [
+    {"en": "Mathematics", "ur": "ریاضی"},
+    {"en": "Physics", "ur": "فزکس"},
+    {"en": "Chemistry", "ur": "کیمسٹری"},
+    {"en": "Biology", "ur": "حیاتیات"},
+    {"en": "English", "ur": "انگریزی"}
+  ],
+  "timings": [
+    {"title": {"en": "Morning", "ur": "صبح"}, "value": {"en": "8:00 AM - 11:00 AM", "ur": "صبح 8:00 تا 11:00"}},
+    {"title": {"en": "Evening", "ur": "شام"}, "value": {"en": "4:00 PM - 8:00 PM", "ur": "شام 4:00 تا 8:00"}}
+  ],
+  "fees": [
+    {"title": {"en": "Class 9-10", "ur": "کلاس 9-10"}, "value": {"en": "PKR 6,000 / month", "ur": "6000 روپے ماہانہ"}},
+    {"title": {"en": "Class 11-12", "ur": "کلاس 11-12"}, "value": {"en": "PKR 7,500 / month", "ur": "7500 روپے ماہانہ"}}
+  ],
+  "language_content": {
+    "title": {"en": "Best Coaching Center", "ur": "بہترین کوچنگ سینٹر"},
+    "tagline": {"en": "Build your future with expert teachers.", "ur": "ماہر اساتذہ کے ساتھ اپنا مستقبل بنائیں۔"},
+    "hero_card_title": {"en": "Admissions Open", "ur": "داخلے جاری ہیں"},
+    "hero_card_text": {"en": "Limited seats available. Reserve now.", "ur": "نشستیں محدود ہیں۔ ابھی رجسٹر کریں۔"},
+    "hero_cta": {"en": "Enroll Now", "ur": "ابھی داخلہ لیں"},
+    "hero_whatsapp": {"en": "Chat on WhatsApp", "ur": "واٹس ایپ پر رابطہ"},
+    "nav": {
+      "subjects": {"en": "Subjects", "ur": "مضامین"},
+      "timings": {"en": "Timings", "ur": "اوقات"},
+      "fees": {"en": "Fees", "ur": "فیس"},
+      "about": {"en": "About", "ur": "تعارف"},
+      "contact": {"en": "Contact", "ur": "رابطہ"}
+    },
+    "headings": {
+      "subjects": {"en": "Subjects Offered", "ur": "پیش کردہ مضامین"},
+      "timings": {"en": "Class Timings", "ur": "کلاس کے اوقات"},
+      "fees": {"en": "Fee Structure", "ur": "فیس اسٹرکچر"},
+      "about": {"en": "About Us", "ur": "ہمارے بارے میں"},
+      "contact": {"en": "Contact Us", "ur": "ہم سے رابطہ کریں"},
+      "form": {"en": "Get Free Counseling", "ur": "مفت مشاورت حاصل کریں"}
+    },
+    "about": {"en": "We provide result-oriented coaching for board and entry test preparation.", "ur": "ہم بورڈ اور انٹری ٹیسٹ کی تیاری کے لیے بہترین کوچنگ فراہم کرتے ہیں۔"},
+    "contact_text": {"en": "Call or message us for admission details.", "ur": "داخلے کی معلومات کے لیے ہمیں کال یا پیغام کریں۔"},
+    "buttons": {
+      "call": {"en": "Call Now", "ur": "ابھی کال کریں"},
+      "whatsapp": {"en": "WhatsApp", "ur": "واٹس ایپ"},
+      "submit": {"en": "Submit", "ur": "جمع کریں"}
+    },
+    "form_labels": {
+      "name": {"en": "Full Name", "ur": "پورا نام"},
+      "phone": {"en": "Phone Number", "ur": "فون نمبر"},
+      "requirement": {"en": "Requirement", "ur": "ضرورت"}
+    },
+    "messages": {
+      "loading": {"en": "Submitting...", "ur": "جمع کیا جا رہا ہے..."},
+      "success": {"en": "Thank you! We will contact you shortly.", "ur": "شکریہ! ہم جلد رابطہ کریں گے۔"},
+      "error": {"en": "Could not submit right now. Please try again.", "ur": "اس وقت جمع نہیں ہوسکا۔ دوبارہ کوشش کریں۔"},
+      "validation": {"en": "Please fill all fields and enter numeric phone.", "ur": "تمام خانے پر کریں اور عددی فون نمبر درج کریں۔"}
+    },
+    "wa_template": {
+      "en": "Hi, I am {name}. My phone is {phone}. I need information about: {requirement}",
+      "ur": "السلام علیکم، میرا نام {name} ہے۔ میرا فون {phone} ہے۔ مجھے اس بارے میں معلومات چاہیے: {requirement}"
+    },
+    "footer": {"en": "© 2026 Excellence Coaching Center. All rights reserved.", "ur": "© 2026 ایکسی لینس کوچنگ سینٹر۔ جملہ حقوق محفوظ ہیں۔"}
+  }
+}
