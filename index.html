@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Coaching center website template with WhatsApp and Google Sheets lead capture"
+    />
+    <title>Coaching Center Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="brand" id="brandName">Loading...</a>
+        <nav class="nav-links" id="mainNav" aria-label="Main Navigation"></nav>
+        <div class="header-actions">
+          <button id="langToggle" class="lang-btn" type="button" aria-label="Switch language">
+            اردو
+          </button>
+          <a id="callBtn" class="btn btn-outline" href="#contact"></a>
+          <a id="waHeaderBtn" class="btn btn-primary" href="#contact"></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero fade-in" id="hero">
+        <div class="container hero-grid">
+          <div>
+            <h1 id="heroTitle"></h1>
+            <p id="heroTagline"></p>
+            <div class="hero-cta">
+              <a id="heroCta" class="btn btn-accent" href="#contact"></a>
+              <a id="heroWhatsapp" class="btn btn-primary" href="#contact"></a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h2 id="heroCardTitle"></h2>
+            <p id="heroCardText"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fade-in" id="subjects">
+        <div class="container">
+          <h2 id="subjectsHeading"></h2>
+          <div class="card-grid" id="subjectsList"></div>
+        </div>
+      </section>
+
+      <section class="section fade-in" id="timings">
+        <div class="container">
+          <h2 id="timingsHeading"></h2>
+          <div class="card-grid" id="timingsList"></div>
+        </div>
+      </section>
+
+      <section class="section fade-in" id="fees">
+        <div class="container">
+          <h2 id="feesHeading"></h2>
+          <div class="card-grid" id="feesList"></div>
+        </div>
+      </section>
+
+      <section class="section fade-in" id="about">
+        <div class="container">
+          <h2 id="aboutHeading"></h2>
+          <div class="card">
+            <p id="aboutText"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fade-in" id="contact">
+        <div class="container contact-grid">
+          <div class="card">
+            <h2 id="contactHeading"></h2>
+            <p id="contactText"></p>
+            <div class="contact-actions">
+              <a id="contactCallBtn" class="btn btn-outline" href="#"></a>
+              <a id="contactWaBtn" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 id="formHeading"></h3>
+            <form id="leadForm" novalidate>
+              <label for="nameInput" id="nameLabel"></label>
+              <input type="text" id="nameInput" name="name" required />
+
+              <label for="phoneInput" id="phoneLabel"></label>
+              <input type="tel" id="phoneInput" name="phone" required />
+
+              <label for="requirementInput" id="requirementLabel"></label>
+              <textarea id="requirementInput" name="requirement" rows="4" required></textarea>
+
+              <button id="submitBtn" type="submit" class="btn btn-accent"></button>
+              <p id="formStatus" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p id="footerText"></p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
