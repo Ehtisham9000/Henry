@@ -1,9 +1,11 @@
-name: Build AURELIS APK
+name: Build Stack Tac Toe APK
 on:
   push:
     branches: [aurelis-apk-build]
   pull_request:
     branches: [main]
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,8 +29,10 @@ jobs:
         run: gradle assembleDebug --no-daemon
       - name: Verify APK exists
         run: test -s aurelis/app/build/outputs/apk/debug/app-debug.apk
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: AURELIS-debug-apk
-          path: aurelis/app/build/outputs/apk/debug/app-debug.apk
+      - name: Publish APK release
+        if: github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="stack-tac-toe-v1.0-${GITHUB_SHA::7}"
+          gh release create "$tag" aurelis/app/build/outputs/apk/debug/app-debug.apk --title "Stack Tac Toe v1.0" --notes "Playable Android prototype generated from the Stack Tac Toe concept."
