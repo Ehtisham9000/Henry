@@ -1,11 +1,9 @@
 package com.ranjha.aurelis;
 
 import android.app.Activity;
-import android.app.role.RoleManager;
 import android.content.*;
 import android.graphics.*;
 import android.os.*;
-import android.provider.Settings;
 import android.view.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -17,7 +15,7 @@ public class MainActivity extends Activity {
     String[] modes={"CANVAS","SEEK","SIGNALS","CONTROL","SPACES"}; int mode=0;
     Surface(Context c){super(c); t.setTypeface(Typeface.create("sans-serif",0)); setBackgroundColor(Color.rgb(5,5,8)); h.post(new Runnable(){public void run(){invalidate();h.postDelayed(this,1000);}});}
     void txt(Canvas c,String s,float x,float y,float size,int color){t.setTextSize(size);t.setColor(color);c.drawText(s,x,y,t);}
-    void glass(Canvas c,float l,float top,float r,float bot){p.setColor(0x241FFFFFF);c.drawRoundRect(l,top,r,bot,28,28,p);p.setStyle(Paint.Style.STROKE);p.setStrokeWidth(1);p.setColor(0x35FFFFFF);c.drawRoundRect(l,top,r,bot,28,28,p);p.setStyle(Paint.Style.FILL);}
+    void glass(Canvas c,float l,float top,float r,float bot){p.setColor(0x24FFFFFF);c.drawRoundRect(l,top,r,bot,28,28,p);p.setStyle(Paint.Style.STROKE);p.setStrokeWidth(1);p.setColor(0x35FFFFFF);c.drawRoundRect(l,top,r,bot,28,28,p);p.setStyle(Paint.Style.FILL);}
     protected void onDraw(Canvas c){super.onDraw(c); int w=getWidth(),hh=getHeight();
       long now=System.currentTimeMillis(); String time=new SimpleDateFormat("HH:mm",Locale.getDefault()).format(new Date(now)); String date=new SimpleDateFormat("EEEE, d MMMM",Locale.getDefault()).format(new Date(now));
       if(mode==0){ txt(c,time,w/2f-55,145,72,Color.WHITE); txt(c,date,w/2f-72,178,14,0x99FFFFFF); txt(c,"AURELIS",28,45,13,0xFF64D2FF); txt(c,"Good evening.",28,225,20,Color.WHITE); txt(c,"What do you need?",28,252,13,0x99FFFFFF);
